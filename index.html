@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pietro — Portfólio</title>
+  <meta name="description" content="Portfólio autoral de Pietro — Estudante. A paixão de viver.">
+
+  <!-- Tipografia: Figtree (Títulos) e Karla (Textos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Experiência de Entrada / Tela de Carregamento (Inspiração Mocean) -->
+  <div class="loader-screen" id="loaderScreen" aria-hidden="true">
+    <div class="loader-content">
+      <span class="loader-logo">PIETRO</span>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <span class="loader-status" id="loaderStatus">Carregando experiência</span>
+    </div>
+  </div>
+
+  <!-- Fundo Animado com Fluidez (Inspiração Illoca — Gradiente permitido) -->
+  <div class="background-ambient" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+  </div>
+
+  <!-- Header com Navegação (Gradiente permitido no header) -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#hero" class="brand-logo" aria-label="Pietro — Início">
+        <span class="brand-symbol">P</span>
+        <span class="brand-name">Pietro</span>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link is-active">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projetos" class="nav-link">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botão de Ação do Header (Cor sólida de destaque) -->
+      <div class="header-cta">
+        <a href="#contato" class="btn-header">Fale comigo</a>
+      </div>
+
+      <!-- Botão Hamburguer Mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+
+    <!-- Menu Mobile Dropdown -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-nav" aria-label="Navegação móvel">
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-nav-link is-active">Início</a></li>
+          <li><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+          <li><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
+          <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+        </ul>
+        <div class="mobile-cta-wrap">
+          <a href="#contato" class="btn-primary mobile-cta">Fale comigo</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal: Seção HERO -->
+  <main id="mainContent">
+    <section class="hero-section" id="hero" aria-label="Apresentação inicial">
+      <div class="hero-container">
+
+        <!-- Informação de Função / Badge (Cor sólida) -->
+        <div class="hero-role-wrapper">
+          <div class="role-pill">
+            <span class="role-indicator"></span>
+            <span class="role-text">Estudante</span>
+          </div>
+        </div>
+
+        <!-- Título Principal Centralizado (Inspiração Spykercars & Adam Sandoval) -->
+        <div class="hero-title-wrapper">
+          <h1 class="hero-name">PIETRO</h1>
+        </div>
+
+        <!-- Frase de Apresentação com Hierarquia Tipográfica Expressiva -->
+        <div class="hero-tagline-wrapper">
+          <p class="hero-tagline">“A paixão de viver.”</p>
+          <p class="hero-subtext">
+            Explorando caminhos no design e na tecnologia com dedicação, 
+            sensibilidade e vontade constante de criar o novo.
+          </p>
+        </div>
+
+        <!-- Botão de Chamada para Ação (Cor de destaque sólida: #F57CF7) -->
+        <div class="hero-action-wrapper">
+          <a href="#projetos" class="btn-primary" id="heroCta">
+            <span class="btn-text">Conhecer Projetos</span>
+            <span class="btn-icon" aria-hidden="true">→</span>
+          </a>
+          <a href="#sobre" class="btn-secondary">
+            <span class="btn-text">Mais sobre mim</span>
+          </a>
+        </div>
+
+        <!-- Seção de Informações e Metadados (Inspiração Spykercars) -->
+        <div class="hero-info-grid">
+          <div class="info-item">
+            <span class="info-label">01 / OCUPAÇÃO</span>
+            <span class="info-value">Estudante</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">02 / FOCO</span>
+            <span class="info-value">Design & Código</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">03 / MINDSET</span>
+            <span class="info-value">A paixão de viver</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">04 / DISPONIBILIDADE</span>
+            <span class="info-value">Novos Desafios</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
